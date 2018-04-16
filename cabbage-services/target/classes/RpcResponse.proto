@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package="com.seed.cabbage.protobuf";
+option java_outer_classname = "RpcResponse";
+
+message Response {
+    int64 sequeceId = 1;
+    string service = 2;
+    string method = 3;
+    string version = 4;
+    int64 traceId = 5;
+    string host = 6;
+    int64 timstamp = 7;
+    bytes messageBody = 8;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package="com.seed.cabbage.protobuf";
+option java_outer_classname = "ServerDispatcher";
+import "RpcResponse.proto";
+
+message Dispatcher {
+    int64 sequeceId = 1;
+    string dispatcher = 2;
+    bytes messageBody = 3;
+}
